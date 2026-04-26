@@ -5,7 +5,6 @@ import java.sql.Statement;
 
 public class App {
     public static void main(String[] args) {
-        // Datos para conectar a tu MySQL local
         String url = "jdbc:mysql://localhost:3306/bioroute_db";
         String usuario = "root"; 
         String password = "1234"; // 
