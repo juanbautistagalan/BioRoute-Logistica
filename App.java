@@ -11,7 +11,7 @@ public class App {
 
         try {
             Connection con = DriverManager.getConnection(url, usuario, password);
-            System.out.println("✅ CONEXIÓN EXITOSA CON BIOROUTE");
+            System.out.println("CONEXIÓN EXITOSA CON BIOROUTE");
 
             Statement stmt = con.createStatement();
             ResultSet rs = stmt.executeQuery("SELECT * FROM clientes");
@@ -22,7 +22,7 @@ public class App {
             }
             con.close();
         } catch (Exception e) {
-            System.out.println("❌ ERROR: " + e.getMessage());
+            System.out.println("ERROR: " + e.getMessage());
         }
     }
 }
