@@ -1,0 +1,2 @@
+package modelo;
+public class DetallePedido { private Producto producto; private int cantidad; private double subtotal; public DetallePedido(Producto producto,int cantidad){this.producto=producto;this.cantidad=cantidad;this.subtotal=calcularSubtotal();} public double calcularSubtotal(){return producto.getPrecioUnitario()*cantidad;} public void mostrarDetalle(){System.out.println(producto.getNombre()+" | Cantidad: "+cantidad+" | Subtotal: $"+subtotal);} }
