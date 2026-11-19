@@ -172,7 +172,7 @@
     },
     {
       "title": "Glossary",
-      "purpose": "Spanish/domain terms and code pointers: pedido, detalle_pedido, estado_pedido, trazabilidad, registrar, listar, stock minimo, Aministrativo, Repartidor, DAO, etc.",
+      "purpose": "Spanish/domain terms and code pointers: pedido, detalle_pedido, estado_pedido, trazabilidad, registrar, listar, stock minimo, Admintristrativo, Repartidor, DAO, etc.",
       "page_notes": [
         {
           "content": ""
