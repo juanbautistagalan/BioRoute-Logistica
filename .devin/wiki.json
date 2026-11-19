@@ -1,0 +1,183 @@
+{
+  "repo_notes": [
+    {
+      "content": ""
+    }
+  ],
+  "pages": [
+    {
+      "title": "Overview",
+      "purpose": "Introduce BioRoute: a Java console prototype for organic-food logistics and traceability; layered package architecture (modelo, dao, conexion, util, main); link to child pages.",
+      "page_notes": [
+        {
+          "content": ""
+        }
+      ]
+    },
+    {
+      "title": "Getting Started: Build and Run",
+      "purpose": "javac/java commands, out/ output dir, MySQL setup, .gitignore exclusions, no build tool.",
+      "parent": "Overview",
+      "page_notes": [
+        {
+          "content": ""
+        }
+      ]
+    },
+    {
+      "title": "Architecture and Layering",
+      "purpose": "How main -> dao -> modelo/conexion/util dependencies flow; in-memory state vs SQL schema.",
+      "parent": "Overview",
+      "page_notes": [
+        {
+          "content": ""
+        }
+      ]
+    },
+    {
+      "title": "Domain Model (modelo)",
+      "purpose": "Overview of the eight domain classes and their relationships; link to child pages.",
+      "page_notes": [
+        {
+          "content": ""
+        }
+      ]
+    },
+    {
+      "title": "Users and Roles",
+      "purpose": "Usuario base class, Administrativo and Repartidor subclasses, polymorphic mostrarMenu().",
+      "parent": "Domain Model (modelo)",
+      "page_notes": [
+        {
+          "content": ""
+        }
+      ]
+    },
+    {
+      "title": "Catalog and Clients",
+      "purpose": "Producto (pricing, stock, stock minimo, descontarStock) and Cliente entities.",
+      "parent": "Domain Model (modelo)",
+      "page_notes": [
+        {
+          "content": ""
+        }
+      ]
+    },
+    {
+      "title": "Orders and Traceability Entities",
+      "purpose": "Pedido, DetallePedido subtotal/total calculation, EstadoPedido status history records.",
+      "parent": "Domain Model (modelo)",
+      "page_notes": [
+        {
+          "content": ""
+        }
+      ]
+    },
+    {
+      "title": "Data Access Layer (dao)",
+      "purpose": "Overview of the DAO pattern used: constructor-injected ArrayList storage, registrar/listar; link to children.",
+      "page_notes": [
+        {
+          "content": ""
+        }
+      ]
+    },
+    {
+      "title": "Entity DAOs",
+      "purpose": "ClienteDAO, ProductoDAO, PedidoDAO: registrar/listar semantics and shared-reference caveats.",
+      "parent": "Data Access Layer (dao)",
+      "page_notes": [
+        {
+          "content": ""
+        }
+      ]
+    },
+    {
+      "title": "EstadoPedidoDAO and Status History",
+      "purpose": "How order state transitions are appended to historial and queried for traceability.",
+      "parent": "Data Access Layer (dao)",
+      "page_notes": [
+        {
+          "content": ""
+        }
+      ]
+    },
+    {
+      "title": "Application Entrypoint and CLI",
+      "purpose": "Overview of Main.java: static state, menu loop, startup data; link to children.",
+      "page_notes": [
+        {
+          "content": ""
+        }
+      ]
+    },
+    {
+      "title": "Menu Options and Workflows",
+      "purpose": "Each numbered CLI option: product/client registration, listing, search, low-stock report, sorting.",
+      "parent": "Application Entrypoint and CLI",
+      "page_notes": [
+        {
+          "content": ""
+        }
+      ]
+    },
+    {
+      "title": "Order Creation and State Updates",
+      "purpose": "crearPedido wizard, stock validation/deduction, actualizarEstadoPedido and consultarTrazabilidad flows.",
+      "parent": "Application Entrypoint and CLI",
+      "page_notes": [
+        {
+          "content": ""
+        }
+      ]
+    },
+    {
+      "title": "Validation Utilities (util)",
+      "purpose": "Validador static helpers: textoNoVacio, numeroPositivo, precioValido and where input validation applies.",
+      "parent": "Application Entrypoint and CLI",
+      "page_notes": [
+        {
+          "content": ""
+        }
+      ]
+    },
+    {
+      "title": "Persistence Infrastructure",
+      "purpose": "Overview of MySQL database and JDBC connectivity; link to children.",
+      "page_notes": [
+        {
+          "content": ""
+        }
+      ]
+    },
+    {
+      "title": "Database Schema (bioroute_db)",
+      "purpose": "Tables usuarios, clientes, productos, pedidos, detalle_pedido, estado_pedido; keys, enums, integrity.",
+      "parent": "Persistence Infrastructure",
+      "page_notes": [
+        {
+          "content": ""
+        }
+      ]
+    },
+    {
+      "title": "JDBC Connection (ConexionBD)",
+      "purpose": "getConexion(), hardcoded URL/user/password, SQLException propagation, no pooling.",
+      "parent": "Persistence Infrastructure",
+      "page_notes": [
+        {
+          "content": ""
+        }
+      ]
+    },
+    {
+      "title": "Glossary",
+      "purpose": "Spanish/domain terms and code pointers: pedido, detalle_pedido, estado_pedido, trazabilidad, registrar, listar, stock minimo, Aministrativo, Repartidor, DAO, etc.",
+      "page_notes": [
+        {
+          "content": ""
+        }
+      ]
+    }
+  ]
+}
